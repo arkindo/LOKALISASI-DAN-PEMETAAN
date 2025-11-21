@@ -16,10 +16,11 @@ berbunyi 2 kali atau suara dari speaker
 # Turtlebo4 Navigation dari Point A ke Point B
 
 Proyek ini dibuat untuk ujian tengah semester, tujuannya adalah bergerak ke titik A, menyalakan buzzer satu kali, kemudian pergi ke titik B dan menyalakan buzzer dua kali.
-
+'''
 bash
 mkdir ~/kelompok_dava/src
 cd ~/kelompok_dava/src
+'''
 
 
 ### Instal package dan dependencies
