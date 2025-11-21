@@ -16,48 +16,52 @@ berbunyi 2 kali atau suara dari speaker
 # Turtlebo4 Navigation dari Point A ke Point B
 
 Proyek ini dibuat untuk ujian tengah semester, tujuannya adalah bergerak ke titik A, menyalakan buzzer satu kali, kemudian pergi ke titik B dan menyalakan buzzer dua kali.
-'''
-bash
+
+```bash
 mkdir ~/kelompok_dava/src
 cd ~/kelompok_dava/src
-'''
+```
 
 
 ### Instal package dan dependencies
-bash
+```bash
 cd ../ && rosdep install --from-paths src --ignore-src -r -y
-
+```
 
 ### Sambungkan pc dan turtlebot (Via Ethernet)
-bash
+```bash
 ssh ubuntu@192.168.185.3
-
+```
 
 ### Melakukan Mapping
-bash
+```bash
 ros2 launch turtlebot4_navigation slam.launch.py
 ros2 launch turtlebot4_viz view_robot.launch.py
-
+```
 
 # Menjalankan Nav2
 
 ### Menjalankan Lokalisasi
-bash
+```bash
 source install/setup.bash
 ros2 launch kelompok_davalocalization.launch.py
+```
 
  ### Menjalankan Navigasi
-bash
+```bash
 source install/setup.bash
 ros2 launch kelompok-dava run_nav.launch.py
+```
 
 
 ### Menjalankan RViz
-bash
+```bash
 ros2 launch turtlebot4_viz view_navigation.launch.py
+```
 
 
 ### Menjalankan Program goal point to point
-bash
+```bash
 source install/setup.bash
 ros2 run kelompok_dava kelompok_dava
+```
